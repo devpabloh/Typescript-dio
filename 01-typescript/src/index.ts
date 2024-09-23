@@ -125,14 +125,21 @@ class character {
     stregth: number;
     skill: number;
 
-    constructor(name:string, streght: number, skill:number){
+    constructor(name:string, stregth: number, skill:number){
         this.name = name;
-        this.stregth = streght;
+        this.stregth = stregth;
         this.skill = skill
     }
 
     attack():void{
         console.log(`Attack with ${this.stregth} points`)
+    }
+}
+
+class Magician extends character {
+    
+    constructor(name:string, stregth: number, skill:number){
+        super(name,stregth, skill)
     }
 }
 

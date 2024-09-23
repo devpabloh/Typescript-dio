@@ -78,13 +78,18 @@ const bot = {
 };
 /* Classes */
 class character {
-    constructor(name, streght, skill) {
+    constructor(name, stregth, skill) {
         this.name = name;
-        this.stregth = streght;
+        this.stregth = stregth;
         this.skill = skill;
     }
     attack() {
         console.log(`Attack with ${this.stregth} points`);
+    }
+}
+class Magician extends character {
+    constructor(name, stregth, skill) {
+        super(name, stregth, skill);
     }
 }
 const p1 = new character("ryu", 10, 98);
