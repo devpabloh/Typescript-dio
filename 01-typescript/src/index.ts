@@ -117,3 +117,32 @@ const bot: robot ={
     id: 1, 
     name: "megaman",
 }
+
+/* Classes */
+
+class character {
+    name: string;
+    stregth: number;
+    skill: number;
+
+    constructor(name:string, streght: number, skill:number){
+        this.name = name;
+        this.stregth = streght;
+        this.skill = skill
+    }
+
+    attack():void{
+        console.log(`Attack with ${this.stregth} points`)
+    }
+}
+
+const p1 = new character("ryu",10,98)
+p1.attack()
+
+/* Data modifiers
+    public - é o valor default, e se não for passado nada ou se colocarmos antes de algo, podemos acessar ele de qualquer local
+    private - quando colocamos private antes de algo, quer dizer que apenas podemos acessar ele de dentro da classe 
+    protected - aonde apenas suas classes e subclasses conseguem enxergar
+*/
+
+
