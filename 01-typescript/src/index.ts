@@ -80,7 +80,7 @@ function addNumber(x: number, y:Number):Number{
     return x + y;
 }
 
-let soma: number = addNumber(4,7)
+let soma:number = addNumber(4,7)
 
 console.log(soma)
 
@@ -98,7 +98,7 @@ async function dataBase(id:number): Promise<string> {
 
 /* Interfaces (type x interface) */
 
-type robot = {
+type robot = { // tipar seus objetos
     id: number,
     name: string,
 };
