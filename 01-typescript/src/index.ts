@@ -137,13 +137,15 @@ class character {
 }
 
 class Magician extends character {
-    
-    constructor(name:string, stregth: number, skill:number){
+    MagicPoints: number 
+    constructor(name:string, stregth: number, skill:number, MagicPoints: number ){
         super(name,stregth, skill)
+        this.MagicPoints = MagicPoints;
     }
 }
 
 const p1 = new character("ryu",10,98)
+const p2 = new Magician("mago", 9, 30, 100)
 p1.attack()
 
 /* Data modifiers
