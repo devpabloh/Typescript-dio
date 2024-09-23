@@ -59,3 +59,61 @@ let dados: string[] = ["Pablo", "Henrique", "Tais", "Gessyca"]
 //outra forma de declarar o array
 let dados2: Array<string> = ["Pablo", "Henrique", "Tais", "Gessyca"]
 
+/* Tuplas */
+
+// Na Tupla, você tem que escrever exatamente da forma / ordem que foi definido
+let boleto: [string, number, number] = ["água", 199.90, 32245]
+
+/* Arrays Métodos */
+
+dados.push()
+
+/* Datas */
+
+let aniversario:Date = new Date("2024-09-01 05:00");
+console.log(aniversario.toString())
+
+/* Funções */
+
+
+function addNumber(x: number, y:Number):Number{
+    return x + y;
+}
+
+let soma: number = addNumber(4,7)
+
+console.log(soma)
+
+/* Funções multi tipos */
+
+function callToPhone(phone: number | string):number | string{
+    return phone
+}
+
+/* Funções assincronas */
+
+async function dataBase(id:number): Promise<string> {
+    return "Pablo"
+}
+
+/* Interfaces (type x interface) */
+
+type robot = {
+    id: number,
+    name: string,
+};
+
+interface robot2 { // geralmente usado quando a gente vai tipar classes
+    id: number,
+    name: string,
+}
+
+const bot2: robot2 ={
+    id: 1, 
+    name: "megaman",
+}
+
+const bot: robot ={
+    id: 1, 
+    name: "megaman",
+}

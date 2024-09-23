@@ -1,5 +1,14 @@
 "use strict";
 /* Tipos primitivos: boolean, string, number */
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 // tipo primitivo bollean que só permite true ou false
 let ligado = true;
 // tipo primitivo string só permite textos
@@ -35,3 +44,35 @@ let MeuProduto = {
 let dados = ["Pablo", "Henrique", "Tais", "Gessyca"];
 //outra forma de declarar o array
 let dados2 = ["Pablo", "Henrique", "Tais", "Gessyca"];
+/* Tuplas */
+// Na Tupla, você tem que escrever exatamente da forma / ordem que foi definido
+let boleto = ["água", 199.90, 32245];
+/* Arrays Métodos */
+dados.push();
+/* Datas */
+let aniversario = new Date("2024-09-01 05:00");
+console.log(aniversario.toString());
+/* Funções */
+function addNumber(x, y) {
+    return x + y;
+}
+let soma = addNumber(4, 7);
+console.log(soma);
+/* Funções multi tipos */
+function callToPhone(phone) {
+    return phone;
+}
+/* Funções assincronas */
+function dataBase(id) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return "Pablo";
+    });
+}
+const bot2 = {
+    id: 1,
+    name: "megaman",
+};
+const bot = {
+    id: 1,
+    name: "megaman",
+};
