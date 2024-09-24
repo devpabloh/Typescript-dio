@@ -76,13 +76,13 @@ console.log(aniversario.toString())
 /* Funções */
 
 
-function addNumber(x: number, y:Number):Number{
+function addNumber(x: number, y: number): number {
     return x + y;
 }
 
-let soma:number = addNumber(4,7)
+let soma: number = addNumber(4, 7);
 
-console.log(soma)
+console.log(soma);
 
 /* Funções multi tipos */
 
@@ -154,4 +154,13 @@ p1.attack()
     protected - aonde apenas suas classes e subclasses conseguem enxergar
 */
 
+/* Generics ou genêrico */
 
+function concatArray(...itens:any[]):any[]{
+    return new Array().concat(...itens);
+}
+
+const numArray = concatArray([1,5], [2,3,4])
+const stgArray = concatArray(["Pablo", "Henrique"], ["Ferreira", "de França"])
+console.log(numArray)
+console.log(stgArray)

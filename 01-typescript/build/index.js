@@ -101,3 +101,11 @@ p1.attack();
     private - quando colocamos private antes de algo, quer dizer que apenas podemos acessar ele de dentro da classe
     protected - aonde apenas suas classes e subclasses conseguem enxergar
 */
+/* Generics ou genêrico */
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1, 5], [2, 3, 4]);
+const stgArray = concatArray(["Pablo", "Henrique"], ["Ferreira", "de França"]);
+console.log(numArray);
+console.log(stgArray);
