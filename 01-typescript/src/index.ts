@@ -156,11 +156,11 @@ p1.attack()
 
 /* Generics ou genêrico */
 
-function concatArray(...itens:any[]):any[]{
+function concatArray<T>(...itens:T[]):T[]{
     return new Array().concat(...itens);
 }
 
-const numArray = concatArray([1,5], [2,3,4])
-const stgArray = concatArray(["Pablo", "Henrique"], ["Ferreira", "de França"])
+const numArray = concatArray<Number[]>([1,5], [2,3,4])
+const stgArray = concatArray<String[]>(["Pablo", "Henrique"], ["Ferreira", "de França"])
 console.log(numArray)
 console.log(stgArray)
