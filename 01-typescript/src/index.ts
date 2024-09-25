@@ -164,3 +164,13 @@ const numArray = concatArray<Number[]>([1,5], [2,3,4])
 const stgArray = concatArray<String[]>(["Pablo", "Henrique"], ["Ferreira", "de França"])
 console.log(numArray)
 console.log(stgArray)
+
+/* decorators */
+
+function exibirNome(target:any){
+    console.log(target)
+}
+@exibirNome
+class funcionario {
+    
+}
